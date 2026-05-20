@@ -1,0 +1,23 @@
+node_modules/
+.next/
+dist/
+.env
+.env.local
+*.log
+.DS_Store
+pipeline/service-account.json
+
+# Screenshots from testing
+*.jpeg
+*.jpg
+*.MP4
+.playwright-mcp/
+
+# Editor / agent state
+.claude/
+
+# Build artifacts
+my-website/out/
+my-website/.next/
+webcrew/out/
+webcrew

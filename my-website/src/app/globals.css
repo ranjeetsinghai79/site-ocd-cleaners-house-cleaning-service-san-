@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+*, *::before, *::after { box-sizing: border-box; }
+
+:root {
+  --orange: #f97316;
+  --orange-dark: #ea580c;
+  --orange-glow: rgba(249,115,22,0.25);
+  --surface: #0f172a;
+  --surface-2: #1e293b;
+  --border: rgba(255,255,255,0.07);
+  --text-muted: rgba(255,255,255,0.45);
+}
+
+html { scroll-behavior: smooth; }
+body { -webkit-font-smoothing: antialiased; font-family: 'Inter', -apple-system, sans-serif; }
+
+@keyframes float-up {
+  from { opacity: 0; transform: translateY(32px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-in  { from { opacity: 0; } to { opacity: 1; } }
+@keyframes pulse-ring {
+  0%   { transform: scale(1); opacity: 0.6; }
+  100% { transform: scale(2); opacity: 0; }
+}
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+.animate-up   { animation: float-up 0.65s cubic-bezier(0.25,0.46,0.45,0.94) both; }
+.animate-fade { animation: fade-in  0.5s ease both; }
+.delay-1 { animation-delay: 0.12s; }
+.delay-2 { animation-delay: 0.22s; }
+.delay-3 { animation-delay: 0.34s; }
+.delay-4 { animation-delay: 0.46s; }
+.delay-5 { animation-delay: 0.58s; }
+.delay-6 { animation-delay: 0.70s; }
