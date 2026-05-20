@@ -2,109 +2,60 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "ocean",
-  niche: "cleaning",
-  name: "Sparkle Clean Co.",
-  tagline: "Spotless Home. Zero Stress.",
-  phone: "(555) 789-0123",
-  phoneHref: "tel:+15557890123",
-  email: "hello@sparkleclean.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Manteca", "Lathrop", "Mountain House", "Ripon"],
-  license: "CA Business #789012",
-  since: "2012",
-  google_rating: "4.9",
-  review_count: "523",
-  emergency: false,
-  social: { google: "https://google.com", yelp: "https://yelp.com", facebook: "https://facebook.com" },
-},
+    name: "OCD Cleaners",
+    tagline: "Sparkling Clean Homes, Every Time.",
+    phone: "(210) 730-8067",
+    phoneHref: "tel:+12107308067",
+    email: "marissamunizocdcleaners@gmail.com",
+    address: "123 Main St",
+    city: "San Antonio",
+    serviceAreas: ["San Antonio", "Helotes", "Boerne", "New Braunfels", "Schertz"],
+    license: "Licensed & Insured",
+    since: "2010",
+    google_rating: "4.9",
+    review_count: "200",
+    emergency: false,
+    theme: "navy",
+    niche: "cleaning",
+  },
 
   services: [
-  { icon: "sparkles", title: "Deep Cleaning", desc: "One-time top-to-bottom clean. Perfect for move-in/out, post-construction, or a seasonal fresh start. We leave no corner untouched.", urgent: false },
-  { icon: "calendar", title: "Weekly / Bi-Weekly", desc: "Recurring cleaning on your schedule. Same trusted cleaner every visit. Cancel anytime, no contracts.", urgent: false },
-  { icon: "truck", title: "Move In / Move Out", desc: "Professional clean for your old place or new home. Deposit-back guaranteed or we re-clean free.", urgent: false },
-  { icon: "building", title: "Commercial Cleaning", desc: "Offices, retail spaces, medical facilities. Nightly, weekly, or custom schedule. Bonded and insured.", urgent: false },
-  { icon: "home", title: "Post-Construction", desc: "Dust, debris, paint overspray — we handle it all. Move-in ready within 24 hours of construction.", urgent: false },
-  { icon: "key", title: "Airbnb Turnover", desc: "Between-guest cleaning that earns 5-star reviews. Quick turnaround. Fresh linens. Restock supplies.", urgent: false },
-],
+    { icon: "home", title: "House Cleaning Services", desc: "Keep your home spotless with our detailed and reliable house cleaning.", urgent: false },
+    { icon: "briefcase", title: "Commercial Cleaning", desc: "Maintain a pristine and professional environment for your business.", urgent: false },
+    { icon: "sparkles", title: "Residential Cleaning", desc: "Tailored cleaning plans for all types of residential properties.", urgent: false },
+    { icon: "scissors", title: "Hoarding Services", desc: "Compassionate and discreet assistance for hoarding cleanouts.", urgent: true },
+    { icon: "droplets", title: "Window Cleaning", desc: "Achieve streak-free, crystal-clear windows for a brighter view.", urgent: false }
+  ],
 
   testimonials: [
-  { name: "Michelle B.", location: "Tracy, CA", stars: 5, text: "My house has never been this clean. The team arrived on time, worked methodically, and even cleaned spots I didn't ask for. Subscribing immediately." },
-  { name: "David S.", location: "Stockton, CA", stars: 5, text: "Used them for move-out cleaning. Landlord returned the full deposit with a compliment about the condition. Worth every dollar." },
-  { name: "Airbnb Host A.", location: "Manteca, CA", stars: 5, text: "They turn my unit over in 2 hours no matter the condition. Guests consistently give 5 stars for cleanliness. Best business decision I made." },
-],
+    { name: "Sarah L.", location: "San Antonio", stars: 5, text: "OCD Cleaners transformed my home! After a deep clean last month, it felt brand new. The team was incredibly thorough, focusing on every detail from baseboards to ceiling fans. I'm so happy with the results and have already scheduled my next service." },
+    { name: "Mark T.", location: "Helotes", stars: 5, text: "We hired OCD Cleaners for our office space, and they consistently deliver exceptional results. Their commercial cleaning service is top-notch, always leaving our workplace immaculate and fresh. It's a huge relief knowing our office is in such capable hands." },
+    { name: "Jessica R.", location: "Boerne", stars: 5, text: "I was overwhelmed with clutter, and OCD Cleaners provided amazing hoarding services. They were so understanding and professional, helping me reclaim my space without judgment. The transformation was incredible, and I can't thank them enough for their support." }
+  ],
 
   trustBadges: [
-  "Background-Checked Staff", "Fully Insured", "Eco-Friendly Products",
-  "Satisfaction Guarantee", "No Contracts", "5-Star Average"
-],
+    "Licensed & Insured", "Custom Cleaning Plans", "5-Star Rated", "Professional & Trusted", "Free Assessments"
+  ],
 
   stats: [
-  {
-    "value": 4.9,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 2615,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 14,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.9, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 1000, label: "Homes Cleaned", suffix: "+", decimals: 0 },
+    { value: 10, label: "Yrs Experience", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "Real Humans Answer",
-    "desc": "No phone trees. A real person picks up — day and night."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "clock", title: "Fast Response", desc: "We respond quickly to your cleaning needs, ensuring timely service." },
+    { icon: "dollar-sign", title: "Upfront Pricing", desc: "Clear, transparent pricing with no hidden fees, ever." },
+    { icon: "award", title: "Certified Pros", desc: "Our team consists of highly trained and certified cleaning specialists." },
+    { icon: "thumbs-up", title: "Satisfaction Guarantee", desc: "We stand by our work; your satisfaction is our top priority." },
+    { icon: "phone", title: "Real Humans Answer", desc: "Speak directly with a friendly team member, not an automated system." },
+    { icon: "truck", title: "Fully Equipped", desc: "Our crews arrive with all the necessary tools and eco-friendly products." }
+  ],
 
-  formServiceOptions: [
-  "Deep Cleaning",
-  "Weekly / Bi-Weekly",
-  "Move In / Move Out",
-  "Commercial Cleaning",
-  "Post-Construction",
-  "Airbnb Turnover"
-],
+  formServiceOptions: ["House Cleaning Services", "Commercial Cleaning Services", "Residential Cleaning Services", "Hoarding Services", "Window Cleaning"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
